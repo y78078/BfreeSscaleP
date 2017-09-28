@@ -1,10 +1,14 @@
 # tool
+
+## sound
 /sys/class/sound/
 
+## backlight
 /sys/class/backlight/backlight
 
 echo 44 > brightness
 
+## fb mode
 /sys/class/graphics/fb0/mode
 /sys/class/graphics/fb0/modes
 
