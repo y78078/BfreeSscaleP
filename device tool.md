@@ -18,3 +18,5 @@ echo 44 > brightness
 /sys/bus/i2c/devices
 
 /sys/bus/iio/devices/iio:device0
+
+cat /dev/iio:device0 | hexdump
