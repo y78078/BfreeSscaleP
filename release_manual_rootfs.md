@@ -5,4 +5,6 @@
 ## edit /lib/systemd/system/serial-getty@.servicecd ../
 ## add fonts to /usr/lib/fonts
 ## edit /etc/profile
+## mkdir /home/root/.conf
+## add scout.conf
 
