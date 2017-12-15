@@ -3,6 +3,8 @@ download
 
 http://git.yoctoproject.org/cgit/cgit.cgi/psplash/
 
+sudo apt-get install libgtk2.0-dev
+
 cp <your-image.jpg> your-image
 
 ./make-image-header.sh your-image POKY
