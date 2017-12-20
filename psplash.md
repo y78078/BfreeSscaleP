@@ -14,3 +14,6 @@ statement : https://stackoverflow.com/questions/24606644/embedded-bootup-splash-
 bitbake psplash -c cleansstate
 
 bitbale psplash
+
+
+cd '/home/scout/nxp/build_qt5/tmp/work/imx6dlsabresd-poky-linux-gnueabi/lttng-modules/2.8.0+gitAUTOINC+6e4fc6f36d-r0/git'
