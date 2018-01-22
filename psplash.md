@@ -17,6 +17,6 @@ bitbale psplash
 
 cd '/home/scout/nxp/build_qt5/tmp/work/cortexa9hf-neon-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+88343ad23c-r15/git'
 
-/etc/init.d/psplash
+/usr/bin/psplash
 
 psplash-write  "PROGRESS 10"
