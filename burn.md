@@ -1,6 +1,12 @@
 # Burn
 
+## Linux 4.1.15
+### Android
+echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro
+
+dd if=/dev/zero of=/dev/block/mmcblk%mmc%boot0 bs=512 seek=2
 ## Linux 4.1.33
+### Yocto
 echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro
 
 dd if=/dev/zero of=/dev/mmcblk%mmc%boot0 bs=512 seek=2
