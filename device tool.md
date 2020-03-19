@@ -20,3 +20,15 @@ echo 44 > brightness
 /sys/bus/iio/devices/iio:device0
 
 cat /dev/iio:device0 | hexdump
+
+# GPIO RS232
+
+echo 4 > /sys/class/gpio/export
+
+echo 5 > /sys/class/gpio/export
+
+echo 16 > /sys/class/gpio/export
+
+echo out > /sys/class/gpio/gpio5/direction
+echo out > /sys/class/gpio/gpio16/direction
+echo 1 > /sys/class/gpio/gpio16/active_low
