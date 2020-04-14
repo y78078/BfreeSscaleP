@@ -10,3 +10,5 @@
 ## add scout.conf
 ## /etc/modprobe.d add quectel.conf options usbserial vendor=0x2c7c product=0x0125
 ## /etc/modules-load.d add g_serial.conf usbserial.conf
+## add wvdial.conf
+
