@@ -4,6 +4,7 @@
 /sys/class/sound/
 $ amixer set 'Headphone' unmute
 $ amixer set 'Headphone' 30
+
 https://askubuntu.com/questions/1159063/alsamixer-finding-item-by-command-line
 
 ## backlight
