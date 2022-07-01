@@ -27,6 +27,18 @@ echo 44 > brightness
 
 cat /dev/iio:device0 | hexdump
 
+cd /sys/bus/iio/devices/iio:device0/scan_elements
+
+echo 1 > in_accel_x_en
+
+echo 1 > in_accel_y_en
+
+echo 1 > in_accel_z_en
+
+echo 1 > in_timestamp_en
+
+echo 1 > ../buffer/enable
+
 # GPIO RS232
 
 echo 4 > /sys/class/gpio/export
