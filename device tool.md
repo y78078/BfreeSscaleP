@@ -89,7 +89,10 @@ echo performance > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
 echo performance > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
 
 for(;;)
+
 {
+
 glmark2-es2-wayland --fullscreen
+
 }
 
