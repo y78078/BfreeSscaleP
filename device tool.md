@@ -77,3 +77,19 @@ first, we need to configure dr_mode = "otg" in dts, and enable CONFIG_USB_CDNS3_
 echo device > /sys/class/usb_role/400000.usb-role-switch/role
 
 echo host > /sys/class/usb_role/400000.usb-role-switch/role
+
+# power cumsumption
+
+echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+
+echo performance > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+
+echo performance > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+
+echo performance > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+
+for(;;)
+{
+glmark2-es2-wayland --fullscreen
+}
+
