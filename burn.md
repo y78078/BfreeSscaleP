@@ -34,5 +34,10 @@ sudo dd if=flash.bin of=imx-image.rootfs.wic bs=1k seek=32 conv=notrunc
 
 compress imx-image.rootfs.wic to imx-image.rootfs.wic.bz2
 
-### flash to sdcard
+### flash to sdcard 1
 bzcat imx-image.rootfs.wic.bz2 | sudo dd of=/dev/sdX bs=1M conv=fsync
+
+### flash to sdcard 2
+$bzip2 -dk imx-image-full-imx8qxpc0mek.rootfs.wic.bz2
+$sudo dd if= imx-image-full-imx8qxpc0mek.rootfs.wic of=/dev/sdX bs=1M
+
