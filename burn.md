@@ -26,7 +26,7 @@ dd if=/dev/zero of=/dev/block/mmcblk%mmc%boot0 bs=512 seek=2
 
 echo 0 > /sys/block/mmcblk0boot0/force_ro
 
-dd if=/dev/block/mmcblk0boot0 bs=512 seek=2
+dd if=/dev/zero of=/dev/block/mmcblk0boot0 bs=512 seek=2
 
 
 ### Yocto
