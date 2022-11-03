@@ -22,6 +22,13 @@ echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro
 
 dd if=/dev/zero of=/dev/block/mmcblk%mmc%boot0 bs=512 seek=2
 
+### Android automotive
+
+echo 0 > /sys/block/mmcblk0boot0/force_ro
+
+dd if=/dev/block/mmcblk0boot0 bs=512 seek=2
+
+
 ### Yocto
 echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro
 
